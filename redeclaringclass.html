@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Re-declaring a class</title>
+  </head>
+  <body>
+    <script>
+      //Declaring class
+      var std = class {
+        //Initializing an object
+        constructor(id, name) {
+          this.id = id;
+          this.name = name;
+        }
+        //Declaring method
+        info() {
+          document.writeln(this.id + " " + this.name + "<br>");
+        }
+      };
+      //passing object to a variable
+      var e1 = new std(91, "Rupa");
+      var e2 = new std(92, "Devi");
+      e1.info(); //calling method
+      e2.info();
+
+      //Re-declaring class
+      var std = class {
+        //Initializing an object
+        constructor(id, name) {
+          this.id = id;
+          this.name = name;
+        }
+        info() {
+          document.writeln(this.id + " " + this.name + "<br>");
+        }
+      };
+      //passing object to a variable
+      var e1 = new std(93, "Siri");
+      var e2 = new std(94, "Sravya");
+      e1.info(); //calling method
+      e2.info();
+    </script>
+  </body>
+</html>

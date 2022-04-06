@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Inheritance concept
+        </title>
+    </head>
+    <body>
+        <script>
+            class presenttime extends Date{
+                constructor(){
+                    super();
+                }
+            }
+            var x = new presenttime();
+            document.writeln("current date");
+            document.writeln(x.getDate()+"-"+(x.getMonth()+1)+"-"+x.getFullYear());
+        </script><br><br>
+        
+        
+        <script>  
+            class Bike  
+            {  
+              constructor()  
+              {  
+                this.company="Honda";  
+              }  
+            }  
+            class Vehicle extends Bike {  
+              constructor(name,price) {  
+               super();  
+                this.name=name;  
+                this.price=price;  
+              }   
+            }  
+            var v = new Vehicle("Shine","70000");  
+            document.writeln(v.company+" "+v.name+" "+v.price);  
+            </script>  
+    </body>
+</html>

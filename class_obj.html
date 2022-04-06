@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Class,object&constructor</title>
+  </head>
+  <body>
+    <script>
+      //Declaring class
+      class Student {
+        //Initialiing an object
+        constructor(attendence, name) {
+          this.attendence = attendence;
+          this.name = name;
+        }
+        //Declaring method
+        info() {
+          document.writeln(this.attendence + " " + this.name + "<br>")
+            }
+      }
+      //passing object to a variable
+      var s1 = new Student("present", "Rupa");
+      var s2 = new Student("absent", "Siri");
+      s1.info();
+      s2.info();
+    </script>
+  </body>
+</html>

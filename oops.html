@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OOPS in JavaScript</title>
+    </head>
+    <body>
+        <!-- <script>
+            class Song1{
+                constructor(){
+                    this.song;
+                    this.singer;
+                }
+                play(){
+                    console.log('song is playing.....!');
+                }
+            }
+            const mysong1 = new  Song1();
+            mysong1.play();
+        </script><br><br> -->
+        <script>
+            // parent class
+class Categories {
+	constructor(songData) {
+		this.categoryName = songData.categoryName;
+		this.categoryDetails = songData.categoryDetails;
+	}
+}
+
+// child class
+class Song extends Categories {
+	constructor(songData) {
+		super(songData);
+		this.artist = songData.artist;
+	}
+}
+
+const mySong = new Song({
+	artist: 'Artist',
+	categoryName: 'New Song',
+	categoryDetails: 2020
+});
+console.log(mySong);
+        </script>
+    </body>
+</html>
